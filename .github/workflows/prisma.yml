@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v3
       - id: iac-scan
         name: Run Scan on CFT files in the repository
-        uses: prisma-cloud-shiftleft/iac-scan-action@53278c231c438216d99b463308a3cbed351ba0c3
+        uses: prisma-cloud-shiftleft/iac-scan-action@99756e24d7340fb3f9532ade771bb92e6bd69271
         with:
           # You will need Prisma Cloud API Access Token
           # More details in https://github.com/prisma-cloud-shiftleft/iac-scan-action
