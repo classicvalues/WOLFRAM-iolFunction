@@ -28,7 +28,7 @@ jobs:
 
       # For Terraform, Cloudrail requires the plan as input. So we generate it using 
       # the Terraform core binary.
-      - uses: hashicorp/setup-terraform@v1
+      - uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: v0.13.2
 
