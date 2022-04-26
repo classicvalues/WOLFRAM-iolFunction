@@ -34,7 +34,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Dependency scan
-        uses: clj-holmes/clj-watson-action@39b8ed306f2c125860cf6e69b6939363689f998c
+        uses: clj-holmes/clj-watson-action@91a9f4e173830cb545f41b09176314fe5701c84b
         with:
           clj-watson-sha: "65d928c"
           clj-watson-tag: "v4.0.1"
