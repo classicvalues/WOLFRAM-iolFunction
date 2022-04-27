@@ -1,0 +1,9 @@
+- name: GitHub action for Wolfram language
+  # You may pin to the exact commit or the version.
+  # uses: miRoox/wolfram-action@f024f844662fbc49994634a8966c8d1bfeb73f2d
+  uses: miRoox/wolfram-action@v1.0.1
+  with:
+    # The Wolfram script file to run
+    file: 
+    # The extra arguments to be passed to the script
+    args: # optional
