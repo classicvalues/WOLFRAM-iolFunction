@@ -7,7 +7,7 @@
     - name: Checkout
       uses: actions/checkout@v1
     - name: Run Wolfram script
-      uses: miRoox/wolfram-action@f024f844662fbc49994634a8966c8d1bfeb73f2d
+      uses: miRoox/wolfram-action@d5c06516bb27f14ae0480d1e5a8e489d7f443e6f
       with:
     # The Wolfram script file to run
     file: Function2 for PocketPinball.wl
