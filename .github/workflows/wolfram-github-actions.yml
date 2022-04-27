@@ -1,8 +1,14 @@
 - name: GitHub action for Wolfram language
-  # You may pin to the exact commit or the version.
-  # uses: miRoox/wolfram-action@f024f844662fbc49994634a8966c8d1bfeb73f2d
-  uses: miRoox/wolfram-action@v1.0.1
-  with:
+  on: [push]
+  run_wolfram:
+    name: wolfram github actions
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Run Wolfram script
+      uses: miRoox/wolfram-action@f024f844662fbc49994634a8966c8d1bfeb73f2d
+      with:
     # The Wolfram script file to run
     file: Function2 for PocketPinball.wl
     file: IOL at Pi for Delta and Theta.wl
@@ -19,3 +25,9 @@
     # The extra arguments to be passed to the script
     args: # optional
       run
+    args:
+    0 1 0 function-IOL var-IOL 
+      env:
+        WOLFRAM_ID: ${{ secrets.WolframID }}
+        WOLFRAM_PASS: ${{ secrets.WolframPW }}
+  
