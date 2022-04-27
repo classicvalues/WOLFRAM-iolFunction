@@ -4,6 +4,18 @@
   uses: miRoox/wolfram-action@v1.0.1
   with:
     # The Wolfram script file to run
-    file: 
+    file: Function2 for PocketPinball.wl
+    file: IOL at Pi for Delta and Theta.wl
+    file: IOL where x is 1 to 100.wl
+    file: IOL where y is .0001 or .56.wl
+    file: IOL where y is 1 to 100(Copy).wl
+    file: IOL where y is 1 to 100.wl
+    file: IOL with x and y as Value Metrics.wl
+    file: IOL.wl
+    file: PinBall Function (Part 2).wl
+    file: PinBoard Function (Cont.).wl
+    file: PinBoard Function.wl
+    file: Pocket Pinball Matrix.wl
     # The extra arguments to be passed to the script
     args: # optional
+      run
