@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run tfsec
-        uses: tfsec/tfsec-sarif-action@9b703869c5108700605056134506e274ef6e9bd3
+        uses: tfsec/tfsec-sarif-action@f91c59a49e32b6d4e74ab48dc515f1c6492a8f75
         with:
           sarif_file: tfsec.sarif         
 
