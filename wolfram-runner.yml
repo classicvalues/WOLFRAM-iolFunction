@@ -23,7 +23,7 @@ jobs:
       uses: ./
       with:
         file: IO.wl
-        args: 0 1 var=2 var-IOL function-IOL 2 3 0
+        args: 0 1 var=2 var-IOL function-IOL 2 3 0 -1
       env:
         WOLFRAM_ID: ${{ secrets.WolframID }}
         WOLFRAM_PASS: ${{ secrets.WolframPW }}
