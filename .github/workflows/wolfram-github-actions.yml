@@ -10,24 +10,24 @@
       uses: miRoox/wolfram-action@d5c06516bb27f14ae0480d1e5a8e489d7f443e6f
       with:
     # The Wolfram script file to run
-    file: Function2 for PocketPinball.wl
-    file: IOL at Pi for Delta and Theta.wl
-    file: IOL where x is 1 to 100.wl
-    file: IOL where y is .0001 or .56.wl
-    file: IOL where y is 1 to 100(Copy).wl
-    file: IOL where y is 1 to 100.wl
-    file: IOL with x and y as Value Metrics.wl
-    file: IOL.wl
-    file: PinBall Function (Part 2).wl
-    file: PinBoard Function (Cont.).wl
-    file: PinBoard Function.wl
-    file: Pocket Pinball Matrix.wl
+    - file: Function2 for PocketPinball.wl
+    - file: IOL at Pi for Delta and Theta.wl
+    - file: IOL where x is 1 to 100.wl
+    - file: IOL where y is .0001 or .56.wl
+    - file: IOL where y is 1 to 100(Copy).wl
+    - file: IOL where y is 1 to 100.wl
+    - file: IOL with x and y as Value Metrics.wl
+    - file: IOL.wl
+    - file: PinBall Function (Part 2).wl
+    - file: PinBoard Function (Cont.).wl
+    - file: PinBoard Function.wl
+    - file: Pocket Pinball Matrix.wl
     # The extra arguments to be passed to the script
-    args: # optional
-      run
-    args:
-    0 1 0 function-IOL var-IOL 
-      env:
-        WOLFRAM_ID: ${{ secrets.WolframID }}
-        WOLFRAM_PASS: ${{ secrets.WolframPW }}
+    with:
+      - args: run
+      - args:
+          0 1 0 function-IOL var-IOL 
+            env:
+              WOLFRAM_ID: ${{ secrets.WolframID }}
+              WOLFRAM_PASS: ${{ secrets.WolframPW }}
   
