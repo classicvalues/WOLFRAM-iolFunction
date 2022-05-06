@@ -9,6 +9,16 @@
     - name: Run Wolfram script
       uses: miRoox/wolfram-action@f024f844662fbc49994634a8966c8d1bfeb73f2d
       with:
+  - name: IOL Runner
+      with:
+    file: IOL.wl
+        args:
+      run
+    args:
+      0 1 0 function-IOL var-IOL 
+      env:
+        WOLFRAM_ID: ${{ secrets.WolframID }}
+        WOLFRAM_PASS: ${{ secrets.WolframPW }}
   - name: Function2 for PocketPinball Runner
     file: Function2 for PocketPinball.wl
     args:
@@ -84,18 +94,6 @@
       env:
         WOLFRAM_ID: ${{ secrets.WolframID }}
         WOLFRAM_PASS: ${{ secrets.WolframPW }}
-    
-  - name: IOL Runner
-      with:
-    file: IOL.wl
-        args:
-      run
-    args:
-      0 1 0 function-IOL var-IOL 
-      env:
-        WOLFRAM_ID: ${{ secrets.WolframID }}
-        WOLFRAM_PASS: ${{ secrets.WolframPW }}
-    
   - name: PinBall Function (Part 2) Runner
       with:
     file: PinBall Function (Part 2).wl
