@@ -34,7 +34,7 @@ jobs:
 
     # Customize the ruby version depending on your needs
     - name: Setup Ruby
-      uses: ruby/setup-ruby@08245253a76fa4d1e459b7809579c62bd9eb718a
+      uses: ruby/setup-ruby@8b5af312bd378dd680957bf9780cc00aee56b7b0
       with:
         ruby-version: '2.7'
 
