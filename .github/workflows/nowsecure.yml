@@ -40,7 +40,7 @@ jobs:
         run: ./gradlew assembleDebug              # Update this to build your Android or iOS application
 
       - name: Run NowSecure
-        uses: nowsecure/nowsecure-action@df90ac6636735e63e1dbe66ecb1ccb0b3a7f4802
+        uses: nowsecure/nowsecure-action@bc67c2d39053a63c6e7e03d970397981a57261bc
         with:
           token: ${{ secrets.NS_TOKEN }}
           app_file: app-debug.apk                 # Update this to a path to your .ipa or .apk
