@@ -132,7 +132,7 @@ jobs:
 
     # Runs Kompose to create manifest files
     - name: Bake deployment
-      uses: azure/k8s-bake@v2.2
+      uses: azure/k8s-bake@v2.3
       with:
         renderEngine: 'kompose'
         dockerComposeFile: ${{ env.DOCKER_COMPOSE_FILE_PATH }}
