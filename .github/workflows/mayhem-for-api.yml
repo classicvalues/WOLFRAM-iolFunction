@@ -51,7 +51,7 @@ jobs:
         run: ./IOL.wl & ./IOL.sh & ./IOL.go 
 
       - name: Mayhem for API
-        uses: ForAllSecure/mapi-action@2b7a672b6c446930580ce317f5ddf7c9d331c07b
+        uses: ForAllSecure/mapi-action@1adc35ca4407463d338f328f70778ea9e6e47b6e
         continue-on-error: true
         with:
           mapi-token: ${{ secrets.MAPI_TOKEN }}
