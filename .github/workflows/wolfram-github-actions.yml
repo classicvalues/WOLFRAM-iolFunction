@@ -5,7 +5,7 @@
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Run Wolfram script
       uses: miRoox/wolfram-action@d5c06516bb27f14ae0480d1e5a8e489d7f443e6f
       with:
