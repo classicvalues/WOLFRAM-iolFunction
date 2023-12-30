@@ -40,3 +40,7 @@ jobs:
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: pmd-report.sarif
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
