@@ -22,7 +22,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: nuget/setup-nuget@feab6cf35f896789ac9fcac6668014bd800526c3
+      - uses: nuget/setup-nuget@282df8e76355c378ab8b4306b363073765a6cf93
       - uses: microsoft/setup-msbuild@v1.3.1
       
       - name: Set up projects for analysis
@@ -38,4 +38,4 @@ jobs:
         uses: security-code-scan/security-code-scan-results-action@579058214e4be88ce9eea302f1fb74df1b8bc1ed
 
       - name: Upload sarif
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
