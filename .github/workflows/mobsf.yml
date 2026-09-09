@@ -24,12 +24,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3.7.0
 
       - name: Setup python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v4.9.1
         with:
-          python-version: 3.8
+          python-version: 3.8.18
 
       - name: Run mobsfscan
         uses: MobSF/mobsfscan@25184ed98afa315d90f982d10a44e42c065dcebe
@@ -37,10 +37,10 @@ jobs:
           args: . --sarif --output results.sarif || true
 
       - name: Upload mobsfscan report
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v3.38.0
         with:
           sarif_file: results.sarif
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v3.1.6
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
