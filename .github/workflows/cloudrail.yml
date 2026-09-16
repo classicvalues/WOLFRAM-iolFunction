@@ -30,7 +30,7 @@ jobs:
       # the Terraform core binary.
       - uses: hashicorp/setup-terraform@v2
         with:
-          terraform_version: v0.13.2
+          terraform_version: v0.13.7
 
       - run: terraform init
 
